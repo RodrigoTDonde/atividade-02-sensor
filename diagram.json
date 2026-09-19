@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "author": "Atividade Avaliativa Pratica 2/6",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-s3-devkitc-1", "id": "esp", "top": 0, "left": 0, "attrs": {} },
+    { "type": "wokwi-mpu6050", "id": "mpu", "top": 30, "left": 270,
+      "attrs": { "accelX": "0", "accelY": "0", "accelZ": "1", "rotationX": "0", "rotationY": "0", "rotationZ": "0" } }
+  ],
+  "connections": [
+    [ "esp:3V3", "mpu:VCC", "red", [] ],
+    [ "esp:GND.1", "mpu:GND", "black", [] ],
+    [ "esp:8", "mpu:SDA", "green", [] ],
+    [ "esp:9", "mpu:SCL", "blue", [] ],
+    [ "mpu:AD0", "mpu:GND", "black", [] ],
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ]
+  ],
+  "dependencies": {}
+}

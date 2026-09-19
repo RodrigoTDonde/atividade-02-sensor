@@ -1,0 +1,370 @@
+Extrato INFO/WARN/ERROR do log original .tools/eim.log
+2026-09-19 10:10:45 - 10 - 09 - INFO - Listing installed versions...
+2026-09-19 10:10:45 - 10 - 09 - INFO - No versions found. Use eim install to install a new ESP-IDF version.
+2026-09-19 10:10:45 - 10 - 09 - INFO - Hint: if you installed ESP-IDF to a custom location, use --esp-idf-json-path <path> to point version management commands to your eim_idf.json.
+2026-09-19 10:10:58 - 10 - 09 - INFO - Found working git on PATH: C:\Program Files\Git\cmd\git.exe
+2026-09-19 10:10:58 - 10 - 09 - INFO - Found working git on PATH: C:\Program Files\Git\cmd\git.exe
+2026-09-19 10:10:59 - 10 - 09 - INFO - All prerequisites are satisfied!
+2026-09-19 10:10:59 - 10 - 09 - INFO - Running python sanity check
+2026-09-19 10:10:59 - 10 - 09 - INFO - Skipping App Execution Alias: C:\Users\rodrigo.donde\AppData\Local\Microsoft\WindowsApps\python3.exe
+2026-09-19 10:10:59 - 10 - 09 - INFO - Found python on Windows PATH (alias-free): C:\Program Files\Python313\python.exe
+2026-09-19 10:11:01 - 10 - 09 - INFO - Python is missing, or it does not meet the requirements. The installer will now install Python for you.
+2026-09-19 10:11:57 - 10 - 09 - INFO - ESP-IDF JSON file already exists at: "C:\\Users\\RODRIG~1.DON\\DOCUME~1\\IAEMBA~1\\ATIVID~1\\.tools\\eim_idf.json"
+2026-09-19 10:11:57 - 10 - 09 - INFO - Found working git on PATH: C:\Program Files\Git\cmd\git.exe
+2026-09-19 10:11:58 - 10 - 09 - INFO - All prerequisites are satisfied!
+2026-09-19 10:11:58 - 10 - 09 - INFO - Running python sanity check
+2026-09-19 10:11:58 - 10 - 09 - INFO - Skipping App Execution Alias: C:\Users\rodrigo.donde\AppData\Local\Microsoft\WindowsApps\python3.exe
+2026-09-19 10:11:58 - 10 - 09 - INFO - Found python on Windows PATH (alias-free): C:\Program Files\Python313\python.exe
+2026-09-19 10:12:14 - 10 - 09 - INFO - Your Python meets the requirements
+2026-09-19 10:12:14 - 10 - 09 - INFO - Starting mirror latency checks (2 candidates)...
+2026-09-19 10:12:14 - 10 - 09 - INFO - Mirror score: https://github.com -> 169
+2026-09-19 10:12:17 - 10 - 09 - WARN - Mirror ping failed with HEAD for https://git.espressif.com.cn
+2026-09-19 10:12:17 - 10 - 09 - INFO - Mirror get score: https://github.com -> 74
+2026-09-19 10:12:20 - 10 - 09 - WARN - Mirror ping failed for https://git.espressif.com.cn: reqwest::Error { kind: Request, url: "https://git.espressif.com.cn/", source: TimedOut }
+2026-09-19 10:12:20 - 10 - 09 - INFO - Unable to measure get latency for https://git.espressif.com.cn: 3s
+2026-09-19 10:12:20 - 10 - 09 - INFO - Selected IDF mirror: https://github.com (74 ms)
+2026-09-19 10:12:20 - 10 - 09 - INFO - Starting mirror latency checks (3 candidates)...
+2026-09-19 10:12:20 - 10 - 09 - INFO - Mirror score: https://github.com -> 90
+2026-09-19 10:12:21 - 10 - 09 - INFO - Mirror score: https://dl.espressif.com/github_assets -> 427
+2026-09-19 10:12:23 - 10 - 09 - INFO - Mirror score: https://dl.espressif.cn/github_assets -> 2037
+2026-09-19 10:12:23 - 10 - 09 - INFO - Selected Tools mirror: https://github.com (90 ms)
+2026-09-19 10:12:23 - 10 - 09 - INFO - Starting mirror latency checks (4 candidates)...
+2026-09-19 10:12:23 - 10 - 09 - INFO - Mirror score: https://pypi.org/simple -> 58
+2026-09-19 10:12:24 - 10 - 09 - WARN - Mirror ping failed with HEAD for https://mirrors.aliyun.com/pypi/simple
+2026-09-19 10:12:24 - 10 - 09 - INFO - Mirror get score: https://pypi.org/simple -> 37
+2026-09-19 10:12:24 - 10 - 09 - WARN - Mirror ping failed for https://mirrors.aliyun.com: 403
+2026-09-19 10:12:24 - 10 - 09 - INFO - Unable to measure get latency for https://mirrors.aliyun.com/pypi/simple: 3s
+2026-09-19 10:12:27 - 10 - 09 - WARN - Mirror ping failed for https://pypi.tuna.tsinghua.edu.cn: reqwest::Error { kind: Request, url: "https://pypi.tuna.tsinghua.edu.cn/", source: TimedOut }
+2026-09-19 10:12:27 - 10 - 09 - INFO - Unable to measure get latency for https://pypi.tuna.tsinghua.edu.cn/simple: 3s
+2026-09-19 10:12:30 - 10 - 09 - INFO - Mirror get score: https://pypi.mirrors.ustc.edu.cn/simple -> 2736
+2026-09-19 10:12:30 - 10 - 09 - INFO - Selected PyPI mirror: https://pypi.org/simple (37 ms)
+2026-09-19 10:12:31 - 10 - 09 - INFO - Non-interactive mode: selecting all tools by default (QEMU excluded)
+2026-09-19 10:12:31 - 10 - 09 - INFO - Cloning ESP-IDF
+2026-09-19 10:12:31 - 10 - 09 - INFO - Cloning repository from CloneOptions { url: "https://github.com/espressif/esp-idf.git", path: "C:\\Users\\RODRIG~1.DON\\DOCUME~1\\IAEMBA~1\\ATIVID~1\\.tools\\espressif\\v5.4.2\\esp-idf", reference: Tag("v5.4.2"), recurse_submodules: true, shallow: true, mirror: Some("https://github.com") }
+2026-09-19 10:13:07 - 10 - 09 - INFO - Checking out tag: v5.4.2
+2026-09-19 10:13:07 - 10 - 09 - INFO - Checking out commit f5c3654a1c2d2a01f7f67def7a0dc48e691f63c0 to worktree
+2026-09-19 10:13:46 - 10 - 09 - INFO - Cloned repository to C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf proceeding to submodules...
+2026-09-19 10:13:46 - 10 - 09 - INFO - Starting submodule update...
+2026-09-19 10:13:46 - 10 - 09 - INFO - Recurse submodules is TRUE
+2026-09-19 10:13:46 - 10 - 09 - INFO - Found submodule gitlink: components/bootloader/subproject/components/micro-ecc/micro-ecc -> 24c60e243580c7868f4334a1ba3123481fe1aa48
+2026-09-19 10:13:46 - 10 - 09 - INFO - Found submodule gitlink: components/bt/controller/lib_esp32 -> 6d007b7167146b31256b29fed31e04dc46989885
+2026-09-19 10:13:46 - 10 - 09 - INFO - Found submodule gitlink: components/bt/controller/lib_esp32c2/esp32c2-bt-lib -> 06c5ef1481e6e5ff9308d6abe9c1e576d60c946f
+2026-09-19 10:13:46 - 10 - 09 - INFO - Found submodule gitlink: components/bt/controller/lib_esp32c3_family -> 72599d583c232ea78d6461b5b502426c6e5a1ec9
+2026-09-19 10:13:46 - 10 - 09 - INFO - Found submodule gitlink: components/bt/controller/lib_esp32c5/esp32c5-bt-lib -> 19bce59850e593a1e0231a1f051e24a1532c38d6
+2026-09-19 10:13:46 - 10 - 09 - INFO - Found submodule gitlink: components/bt/controller/lib_esp32c6/esp32c6-bt-lib -> 841466ff3cf6635bf061c18e836807ee7f99ce78
+2026-09-19 10:13:46 - 10 - 09 - INFO - Found submodule gitlink: components/bt/controller/lib_esp32h2/esp32h2-bt-lib -> bd09406c74d135d1d4e68c5e578540a8bcffbcac
+2026-09-19 10:13:46 - 10 - 09 - INFO - Found submodule gitlink: components/bt/esp_ble_mesh/lib/lib -> a62a98132cdec59d2f2745da7b0598964b38bdae
+2026-09-19 10:13:46 - 10 - 09 - INFO - Found submodule gitlink: components/bt/host/nimble/nimble -> 0225775e49669cd4f070400908f73718bddce83b
+2026-09-19 10:13:46 - 10 - 09 - INFO - Found submodule gitlink: components/cmock/CMock -> eeecc49ce8af123cf8ad40efdb9673e37b56230f
+2026-09-19 10:13:46 - 10 - 09 - INFO - Found submodule gitlink: components/esp_coex/lib -> cb6667841f63457246d56a9170f3409917e9d5a8
+2026-09-19 10:13:46 - 10 - 09 - INFO - Found submodule gitlink: components/esp_phy/lib -> fc76520d481fc3d08cbc001ef47804a4457fffd7
+2026-09-19 10:13:46 - 10 - 09 - INFO - Found submodule gitlink: components/esp_wifi/lib -> 206fe3e13e788b5fad8be6d39b5d9742e4bd9985
+2026-09-19 10:13:46 - 10 - 09 - INFO - Found submodule gitlink: components/heap/tlsf -> 2867f6883a12920b1969ff9624c0ab0e4185c2ce
+2026-09-19 10:13:46 - 10 - 09 - INFO - Found submodule gitlink: components/json/cJSON -> 8f2beb57ddad1f94bed899790b00f46df893ccac
+2026-09-19 10:13:46 - 10 - 09 - INFO - Found submodule gitlink: components/lwip/lwip -> fa4dffdfac52587a26c1f29258376df750cf8474
+2026-09-19 10:13:46 - 10 - 09 - INFO - Found submodule gitlink: components/mbedtls/mbedtls -> 601990b1d81510a135da9bb0476d6ed3cb8c011b
+2026-09-19 10:13:46 - 10 - 09 - INFO - Found submodule gitlink: components/mqtt/esp-mqtt -> cac1552e62b0474c162547b7cce345d7cd1aecfe
+2026-09-19 10:13:46 - 10 - 09 - INFO - Found submodule gitlink: components/openthread/lib -> d4d4738d0d757dbcead167179ecf829a8c1d477b
+2026-09-19 10:13:46 - 10 - 09 - INFO - Found submodule gitlink: components/openthread/openthread -> ec2b0d487356d2955346457a6515201039140037
+2026-09-19 10:13:46 - 10 - 09 - INFO - Found submodule gitlink: components/protobuf-c/protobuf-c -> abc67a11c6db271bedbb9f58be85d6f4e2ea8389
+2026-09-19 10:13:46 - 10 - 09 - INFO - Found submodule gitlink: components/spiffs/spiffs -> 0dbb3f71c5f6fae3747a9d935372773762baf852
+2026-09-19 10:13:46 - 10 - 09 - INFO - Found submodule gitlink: components/unity/unity -> bf560290f6020737eafaa8b5cbd2177c3956c03f
+2026-09-19 10:13:46 - 10 - 09 - INFO - Creating parent directories: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/bt/controller
+2026-09-19 10:13:46 - 10 - 09 - INFO - Creating modules dir: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/bt/controller/lib_esp32
+2026-09-19 10:13:46 - 10 - 09 - INFO - Contents of C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/bt/controller/lib_esp32 before init: []
+2026-09-19 10:13:46 - 10 - 09 - INFO - Initializing new git repo at C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/bt/controller/lib_esp32
+2026-09-19 10:13:46 - 10 - 09 - INFO - Git dir is at: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/bt/controller/lib_esp32
+2026-09-19 10:13:46 - 10 - 09 - INFO - ✓ Initialized modules repo: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/bt/controller/lib_esp32
+2026-09-19 10:13:47 - 10 - 09 - INFO - ✓ Submodule complete: components/bt/controller/lib_esp32
+2026-09-19 10:13:47 - 10 - 09 - INFO - IDF submodule correctly downloaded to:: components/bt/controller/lib_esp32
+2026-09-19 10:13:47 - 10 - 09 - INFO - Creating parent directories: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/bootloader/subproject/components/micro-ecc
+2026-09-19 10:13:47 - 10 - 09 - INFO - Creating modules dir: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/bootloader/subproject/components/micro-ecc/micro-ecc
+2026-09-19 10:13:47 - 10 - 09 - INFO - Contents of C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/bootloader/subproject/components/micro-ecc/micro-ecc before init: []
+2026-09-19 10:13:47 - 10 - 09 - INFO - Initializing new git repo at C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/bootloader/subproject/components/micro-ecc/micro-ecc
+2026-09-19 10:13:47 - 10 - 09 - INFO - Git dir is at: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/bootloader/subproject/components/micro-ecc/micro-ecc
+2026-09-19 10:13:47 - 10 - 09 - INFO - ✓ Initialized modules repo: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/bootloader/subproject/components/micro-ecc/micro-ecc
+2026-09-19 10:13:48 - 10 - 09 - INFO - ✓ Submodule complete: components/bootloader/subproject/components/micro-ecc/micro-ecc
+2026-09-19 10:13:48 - 10 - 09 - INFO - IDF submodule correctly downloaded to:: components/bootloader/subproject/components/micro-ecc/micro-ecc
+2026-09-19 10:13:48 - 10 - 09 - INFO - Creating parent directories: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/spiffs
+2026-09-19 10:13:48 - 10 - 09 - INFO - Creating modules dir: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/spiffs/spiffs
+2026-09-19 10:13:48 - 10 - 09 - INFO - Contents of C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/spiffs/spiffs before init: []
+2026-09-19 10:13:48 - 10 - 09 - INFO - Initializing new git repo at C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/spiffs/spiffs
+2026-09-19 10:13:48 - 10 - 09 - INFO - Git dir is at: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/spiffs/spiffs
+2026-09-19 10:13:48 - 10 - 09 - INFO - ✓ Initialized modules repo: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/spiffs/spiffs
+2026-09-19 10:13:49 - 10 - 09 - INFO - ✓ Submodule complete: components/spiffs/spiffs
+2026-09-19 10:13:49 - 10 - 09 - INFO - IDF submodule correctly downloaded to:: components/spiffs/spiffs
+2026-09-19 10:13:49 - 10 - 09 - INFO - Creating parent directories: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/json
+2026-09-19 10:13:49 - 10 - 09 - INFO - Creating modules dir: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/json/cJSON
+2026-09-19 10:13:49 - 10 - 09 - INFO - Contents of C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/json/cJSON before init: []
+2026-09-19 10:13:49 - 10 - 09 - INFO - Initializing new git repo at C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/json/cJSON
+2026-09-19 10:13:49 - 10 - 09 - INFO - Git dir is at: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/json/cJSON
+2026-09-19 10:13:49 - 10 - 09 - INFO - ✓ Initialized modules repo: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/json/cJSON
+2026-09-19 10:13:52 - 10 - 09 - INFO - ✓ Submodule complete: components/json/cJSON
+2026-09-19 10:13:52 - 10 - 09 - INFO - IDF submodule correctly downloaded to:: components/json/cJSON
+2026-09-19 10:13:52 - 10 - 09 - INFO - Creating parent directories: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/mbedtls
+2026-09-19 10:13:52 - 10 - 09 - INFO - Creating modules dir: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/mbedtls/mbedtls
+2026-09-19 10:13:52 - 10 - 09 - INFO - Contents of C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/mbedtls/mbedtls before init: []
+2026-09-19 10:13:52 - 10 - 09 - INFO - Initializing new git repo at C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/mbedtls/mbedtls
+2026-09-19 10:13:52 - 10 - 09 - INFO - Git dir is at: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/mbedtls/mbedtls
+2026-09-19 10:13:52 - 10 - 09 - INFO - ✓ Initialized modules repo: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/mbedtls/mbedtls
+2026-09-19 10:13:56 - 10 - 09 - INFO - ✓ Submodule complete: components/mbedtls/mbedtls
+2026-09-19 10:13:56 - 10 - 09 - INFO - IDF submodule correctly downloaded to:: components/mbedtls/mbedtls
+2026-09-19 10:13:56 - 10 - 09 - INFO - Creating parent directories: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/lwip
+2026-09-19 10:13:56 - 10 - 09 - INFO - Creating modules dir: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/lwip/lwip
+2026-09-19 10:13:56 - 10 - 09 - INFO - Contents of C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/lwip/lwip before init: []
+2026-09-19 10:13:56 - 10 - 09 - INFO - Initializing new git repo at C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/lwip/lwip
+2026-09-19 10:13:56 - 10 - 09 - INFO - Git dir is at: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/lwip/lwip
+2026-09-19 10:13:56 - 10 - 09 - INFO - ✓ Initialized modules repo: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/lwip/lwip
+2026-09-19 10:13:59 - 10 - 09 - INFO - ✓ Submodule complete: components/lwip/lwip
+2026-09-19 10:13:59 - 10 - 09 - INFO - IDF submodule correctly downloaded to:: components/lwip/lwip
+2026-09-19 10:13:59 - 10 - 09 - INFO - Creating parent directories: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/mqtt
+2026-09-19 10:13:59 - 10 - 09 - INFO - Creating modules dir: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/mqtt/esp-mqtt
+2026-09-19 10:13:59 - 10 - 09 - INFO - Contents of C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/mqtt/esp-mqtt before init: []
+2026-09-19 10:13:59 - 10 - 09 - INFO - Initializing new git repo at C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/mqtt/esp-mqtt
+2026-09-19 10:13:59 - 10 - 09 - INFO - Git dir is at: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/mqtt/esp-mqtt
+2026-09-19 10:13:59 - 10 - 09 - INFO - ✓ Initialized modules repo: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/mqtt/esp-mqtt
+2026-09-19 10:14:00 - 10 - 09 - INFO - ✓ Submodule complete: components/mqtt/esp-mqtt
+2026-09-19 10:14:00 - 10 - 09 - INFO - IDF submodule correctly downloaded to:: components/mqtt/esp-mqtt
+2026-09-19 10:14:00 - 10 - 09 - INFO - Creating parent directories: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/protobuf-c
+2026-09-19 10:14:00 - 10 - 09 - INFO - Creating modules dir: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/protobuf-c/protobuf-c
+2026-09-19 10:14:00 - 10 - 09 - INFO - Contents of C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/protobuf-c/protobuf-c before init: []
+2026-09-19 10:14:00 - 10 - 09 - INFO - Initializing new git repo at C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/protobuf-c/protobuf-c
+2026-09-19 10:14:00 - 10 - 09 - INFO - Git dir is at: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/protobuf-c/protobuf-c
+2026-09-19 10:14:00 - 10 - 09 - INFO - ✓ Initialized modules repo: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/protobuf-c/protobuf-c
+2026-09-19 10:14:01 - 10 - 09 - INFO - ✓ Submodule complete: components/protobuf-c/protobuf-c
+2026-09-19 10:14:01 - 10 - 09 - INFO - IDF submodule correctly downloaded to:: components/protobuf-c/protobuf-c
+2026-09-19 10:14:01 - 10 - 09 - INFO - Creating parent directories: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/unity
+2026-09-19 10:14:01 - 10 - 09 - INFO - Creating modules dir: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/unity/unity
+2026-09-19 10:14:01 - 10 - 09 - INFO - Contents of C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/unity/unity before init: []
+2026-09-19 10:14:01 - 10 - 09 - INFO - Initializing new git repo at C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/unity/unity
+2026-09-19 10:14:01 - 10 - 09 - INFO - Git dir is at: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/unity/unity
+2026-09-19 10:14:01 - 10 - 09 - INFO - ✓ Initialized modules repo: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/unity/unity
+2026-09-19 10:14:03 - 10 - 09 - INFO - ✓ Submodule complete: components/unity/unity
+2026-09-19 10:14:03 - 10 - 09 - INFO - IDF submodule correctly downloaded to:: components/unity/unity
+2026-09-19 10:14:03 - 10 - 09 - INFO - Creating parent directories: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/bt/host/nimble
+2026-09-19 10:14:03 - 10 - 09 - INFO - Creating modules dir: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/bt/host/nimble/nimble
+2026-09-19 10:14:03 - 10 - 09 - INFO - Contents of C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/bt/host/nimble/nimble before init: []
+2026-09-19 10:14:03 - 10 - 09 - INFO - Initializing new git repo at C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/bt/host/nimble/nimble
+2026-09-19 10:14:03 - 10 - 09 - INFO - Git dir is at: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/bt/host/nimble/nimble
+2026-09-19 10:14:03 - 10 - 09 - INFO - ✓ Initialized modules repo: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/bt/host/nimble/nimble
+2026-09-19 10:14:07 - 10 - 09 - INFO - ✓ Submodule complete: components/bt/host/nimble/nimble
+2026-09-19 10:14:07 - 10 - 09 - INFO - IDF submodule correctly downloaded to:: components/bt/host/nimble/nimble
+2026-09-19 10:14:07 - 10 - 09 - INFO - Creating parent directories: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/esp_wifi
+2026-09-19 10:14:07 - 10 - 09 - INFO - Creating modules dir: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/esp_wifi/lib
+2026-09-19 10:14:07 - 10 - 09 - INFO - Contents of C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/esp_wifi/lib before init: []
+2026-09-19 10:14:07 - 10 - 09 - INFO - Initializing new git repo at C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/esp_wifi/lib
+2026-09-19 10:14:07 - 10 - 09 - INFO - Git dir is at: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/esp_wifi/lib
+2026-09-19 10:14:07 - 10 - 09 - INFO - ✓ Initialized modules repo: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/esp_wifi/lib
+2026-09-19 10:14:10 - 10 - 09 - INFO - ✓ Submodule complete: components/esp_wifi/lib
+2026-09-19 10:14:10 - 10 - 09 - INFO - IDF submodule correctly downloaded to:: components/esp_wifi/lib
+2026-09-19 10:14:10 - 10 - 09 - INFO - Creating parent directories: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/cmock
+2026-09-19 10:14:10 - 10 - 09 - INFO - Creating modules dir: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/cmock/CMock
+2026-09-19 10:14:10 - 10 - 09 - INFO - Contents of C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/cmock/CMock before init: []
+2026-09-19 10:14:10 - 10 - 09 - INFO - Initializing new git repo at C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/cmock/CMock
+2026-09-19 10:14:10 - 10 - 09 - INFO - Git dir is at: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/cmock/CMock
+2026-09-19 10:14:10 - 10 - 09 - INFO - ✓ Initialized modules repo: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/cmock/CMock
+2026-09-19 10:14:12 - 10 - 09 - INFO - ✓ Submodule complete: components/cmock/CMock
+2026-09-19 10:14:12 - 10 - 09 - INFO - IDF submodule correctly downloaded to:: components/cmock/CMock
+2026-09-19 10:14:12 - 10 - 09 - INFO - Found submodule gitlink: vendor/c_exception -> 71b47be7c950f1bf5f7e5303779fa99a16224bb6
+2026-09-19 10:14:12 - 10 - 09 - INFO - Found submodule gitlink: vendor/unity -> cf949f45ca6d172a177b00da21310607b97bc7a7
+2026-09-19 10:14:12 - 10 - 09 - INFO - Creating parent directories: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components\cmock\CMock\modules\vendor
+2026-09-19 10:14:12 - 10 - 09 - INFO - Creating modules dir: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components\cmock\CMock\modules\vendor/unity
+2026-09-19 10:14:12 - 10 - 09 - INFO - Contents of C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components\cmock\CMock\modules\vendor/unity before init: []
+2026-09-19 10:14:12 - 10 - 09 - INFO - Initializing new git repo at C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components\cmock\CMock\modules\vendor/unity
+2026-09-19 10:14:12 - 10 - 09 - INFO - Git dir is at: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components\cmock\CMock\modules\vendor/unity
+2026-09-19 10:14:12 - 10 - 09 - INFO - ✓ Initialized modules repo: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components\cmock\CMock\modules\vendor/unity
+2026-09-19 10:14:13 - 10 - 09 - INFO - ✓ Submodule complete: vendor/unity
+2026-09-19 10:14:13 - 10 - 09 - INFO - IDF submodule correctly downloaded to:: vendor/unity
+2026-09-19 10:14:13 - 10 - 09 - INFO - Creating parent directories: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components\cmock\CMock\modules\vendor
+2026-09-19 10:14:13 - 10 - 09 - INFO - Creating modules dir: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components\cmock\CMock\modules\vendor/c_exception
+2026-09-19 10:14:13 - 10 - 09 - INFO - Contents of C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components\cmock\CMock\modules\vendor/c_exception before init: []
+2026-09-19 10:14:13 - 10 - 09 - INFO - Initializing new git repo at C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components\cmock\CMock\modules\vendor/c_exception
+2026-09-19 10:14:13 - 10 - 09 - INFO - Git dir is at: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components\cmock\CMock\modules\vendor/c_exception
+2026-09-19 10:14:13 - 10 - 09 - INFO - ✓ Initialized modules repo: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components\cmock\CMock\modules\vendor/c_exception
+2026-09-19 10:14:14 - 10 - 09 - INFO - ✓ Submodule complete: vendor/c_exception
+2026-09-19 10:14:14 - 10 - 09 - INFO - IDF submodule correctly downloaded to:: vendor/c_exception
+2026-09-19 10:14:14 - 10 - 09 - INFO - Creating parent directories: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/openthread
+2026-09-19 10:14:14 - 10 - 09 - INFO - Creating modules dir: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/openthread/openthread
+2026-09-19 10:14:14 - 10 - 09 - INFO - Contents of C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/openthread/openthread before init: []
+2026-09-19 10:14:14 - 10 - 09 - INFO - Initializing new git repo at C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/openthread/openthread
+2026-09-19 10:14:14 - 10 - 09 - INFO - Git dir is at: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/openthread/openthread
+2026-09-19 10:14:14 - 10 - 09 - INFO - ✓ Initialized modules repo: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/openthread/openthread
+2026-09-19 10:14:22 - 10 - 09 - INFO - ✓ Submodule complete: components/openthread/openthread
+2026-09-19 10:14:22 - 10 - 09 - INFO - IDF submodule correctly downloaded to:: components/openthread/openthread
+2026-09-19 10:14:22 - 10 - 09 - INFO - Creating parent directories: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/bt/controller
+2026-09-19 10:14:22 - 10 - 09 - INFO - Creating modules dir: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/bt/controller/lib_esp32c3_family
+2026-09-19 10:14:22 - 10 - 09 - INFO - Contents of C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/bt/controller/lib_esp32c3_family before init: []
+2026-09-19 10:14:22 - 10 - 09 - INFO - Initializing new git repo at C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/bt/controller/lib_esp32c3_family
+2026-09-19 10:14:22 - 10 - 09 - INFO - Git dir is at: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/bt/controller/lib_esp32c3_family
+2026-09-19 10:14:22 - 10 - 09 - INFO - ✓ Initialized modules repo: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/bt/controller/lib_esp32c3_family
+2026-09-19 10:14:24 - 10 - 09 - INFO - ✓ Submodule complete: components/bt/controller/lib_esp32c3_family
+2026-09-19 10:14:24 - 10 - 09 - INFO - IDF submodule correctly downloaded to:: components/bt/controller/lib_esp32c3_family
+2026-09-19 10:14:24 - 10 - 09 - INFO - Creating parent directories: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/esp_phy
+2026-09-19 10:14:24 - 10 - 09 - INFO - Creating modules dir: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/esp_phy/lib
+2026-09-19 10:14:24 - 10 - 09 - INFO - Contents of C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/esp_phy/lib before init: []
+2026-09-19 10:14:24 - 10 - 09 - INFO - Initializing new git repo at C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/esp_phy/lib
+2026-09-19 10:14:24 - 10 - 09 - INFO - Git dir is at: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/esp_phy/lib
+2026-09-19 10:14:24 - 10 - 09 - INFO - ✓ Initialized modules repo: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/esp_phy/lib
+2026-09-19 10:14:25 - 10 - 09 - INFO - ✓ Submodule complete: components/esp_phy/lib
+2026-09-19 10:14:25 - 10 - 09 - INFO - IDF submodule correctly downloaded to:: components/esp_phy/lib
+2026-09-19 10:14:25 - 10 - 09 - INFO - Creating parent directories: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/openthread
+2026-09-19 10:14:25 - 10 - 09 - INFO - Creating modules dir: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/openthread/lib
+2026-09-19 10:14:25 - 10 - 09 - INFO - Contents of C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/openthread/lib before init: []
+2026-09-19 10:14:25 - 10 - 09 - INFO - Initializing new git repo at C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/openthread/lib
+2026-09-19 10:14:25 - 10 - 09 - INFO - Git dir is at: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/openthread/lib
+2026-09-19 10:14:25 - 10 - 09 - INFO - ✓ Initialized modules repo: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/openthread/lib
+2026-09-19 10:14:26 - 10 - 09 - INFO - ✓ Submodule complete: components/openthread/lib
+2026-09-19 10:14:26 - 10 - 09 - INFO - IDF submodule correctly downloaded to:: components/openthread/lib
+2026-09-19 10:14:26 - 10 - 09 - INFO - Creating parent directories: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/bt/controller/lib_esp32h2
+2026-09-19 10:14:26 - 10 - 09 - INFO - Creating modules dir: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/bt/controller/lib_esp32h2/esp32h2-bt-lib
+2026-09-19 10:14:26 - 10 - 09 - INFO - Contents of C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/bt/controller/lib_esp32h2/esp32h2-bt-lib before init: []
+2026-09-19 10:14:26 - 10 - 09 - INFO - Initializing new git repo at C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/bt/controller/lib_esp32h2/esp32h2-bt-lib
+2026-09-19 10:14:26 - 10 - 09 - INFO - Git dir is at: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/bt/controller/lib_esp32h2/esp32h2-bt-lib
+2026-09-19 10:14:26 - 10 - 09 - INFO - ✓ Initialized modules repo: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/bt/controller/lib_esp32h2/esp32h2-bt-lib
+2026-09-19 10:14:28 - 10 - 09 - INFO - ✓ Submodule complete: components/bt/controller/lib_esp32h2/esp32h2-bt-lib
+2026-09-19 10:14:28 - 10 - 09 - INFO - IDF submodule correctly downloaded to:: components/bt/controller/lib_esp32h2/esp32h2-bt-lib
+2026-09-19 10:14:28 - 10 - 09 - INFO - Creating parent directories: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/bt/controller/lib_esp32c2
+2026-09-19 10:14:28 - 10 - 09 - INFO - Creating modules dir: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/bt/controller/lib_esp32c2/esp32c2-bt-lib
+2026-09-19 10:14:28 - 10 - 09 - INFO - Contents of C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/bt/controller/lib_esp32c2/esp32c2-bt-lib before init: []
+2026-09-19 10:14:28 - 10 - 09 - INFO - Initializing new git repo at C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/bt/controller/lib_esp32c2/esp32c2-bt-lib
+2026-09-19 10:14:28 - 10 - 09 - INFO - Git dir is at: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/bt/controller/lib_esp32c2/esp32c2-bt-lib
+2026-09-19 10:14:28 - 10 - 09 - INFO - ✓ Initialized modules repo: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/bt/controller/lib_esp32c2/esp32c2-bt-lib
+2026-09-19 10:14:29 - 10 - 09 - INFO - ✓ Submodule complete: components/bt/controller/lib_esp32c2/esp32c2-bt-lib
+2026-09-19 10:14:29 - 10 - 09 - INFO - IDF submodule correctly downloaded to:: components/bt/controller/lib_esp32c2/esp32c2-bt-lib
+2026-09-19 10:14:29 - 10 - 09 - INFO - Creating parent directories: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/bt/controller/lib_esp32c6
+2026-09-19 10:14:29 - 10 - 09 - INFO - Creating modules dir: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/bt/controller/lib_esp32c6/esp32c6-bt-lib
+2026-09-19 10:14:29 - 10 - 09 - INFO - Contents of C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/bt/controller/lib_esp32c6/esp32c6-bt-lib before init: []
+2026-09-19 10:14:29 - 10 - 09 - INFO - Initializing new git repo at C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/bt/controller/lib_esp32c6/esp32c6-bt-lib
+2026-09-19 10:14:29 - 10 - 09 - INFO - Git dir is at: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/bt/controller/lib_esp32c6/esp32c6-bt-lib
+2026-09-19 10:14:29 - 10 - 09 - INFO - ✓ Initialized modules repo: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/bt/controller/lib_esp32c6/esp32c6-bt-lib
+2026-09-19 10:14:30 - 10 - 09 - INFO - ✓ Submodule complete: components/bt/controller/lib_esp32c6/esp32c6-bt-lib
+2026-09-19 10:14:30 - 10 - 09 - INFO - IDF submodule correctly downloaded to:: components/bt/controller/lib_esp32c6/esp32c6-bt-lib
+2026-09-19 10:14:30 - 10 - 09 - INFO - Creating parent directories: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/bt/controller/lib_esp32c5
+2026-09-19 10:14:30 - 10 - 09 - INFO - Creating modules dir: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/bt/controller/lib_esp32c5/esp32c5-bt-lib
+2026-09-19 10:14:30 - 10 - 09 - INFO - Contents of C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/bt/controller/lib_esp32c5/esp32c5-bt-lib before init: []
+2026-09-19 10:14:30 - 10 - 09 - INFO - Initializing new git repo at C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/bt/controller/lib_esp32c5/esp32c5-bt-lib
+2026-09-19 10:14:30 - 10 - 09 - INFO - Git dir is at: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/bt/controller/lib_esp32c5/esp32c5-bt-lib
+2026-09-19 10:14:30 - 10 - 09 - INFO - ✓ Initialized modules repo: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/bt/controller/lib_esp32c5/esp32c5-bt-lib
+2026-09-19 10:14:31 - 10 - 09 - INFO - ✓ Submodule complete: components/bt/controller/lib_esp32c5/esp32c5-bt-lib
+2026-09-19 10:14:31 - 10 - 09 - INFO - IDF submodule correctly downloaded to:: components/bt/controller/lib_esp32c5/esp32c5-bt-lib
+2026-09-19 10:14:31 - 10 - 09 - INFO - Creating parent directories: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/heap
+2026-09-19 10:14:31 - 10 - 09 - INFO - Creating modules dir: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/heap/tlsf
+2026-09-19 10:14:31 - 10 - 09 - INFO - Contents of C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/heap/tlsf before init: []
+2026-09-19 10:14:31 - 10 - 09 - INFO - Initializing new git repo at C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/heap/tlsf
+2026-09-19 10:14:31 - 10 - 09 - INFO - Git dir is at: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/heap/tlsf
+2026-09-19 10:14:31 - 10 - 09 - INFO - ✓ Initialized modules repo: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/heap/tlsf
+2026-09-19 10:14:32 - 10 - 09 - INFO - ✓ Submodule complete: components/heap/tlsf
+2026-09-19 10:14:32 - 10 - 09 - INFO - IDF submodule correctly downloaded to:: components/heap/tlsf
+2026-09-19 10:14:32 - 10 - 09 - INFO - Creating parent directories: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/esp_coex
+2026-09-19 10:14:32 - 10 - 09 - INFO - Creating modules dir: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/esp_coex/lib
+2026-09-19 10:14:32 - 10 - 09 - INFO - Contents of C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/esp_coex/lib before init: []
+2026-09-19 10:14:32 - 10 - 09 - INFO - Initializing new git repo at C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/esp_coex/lib
+2026-09-19 10:14:32 - 10 - 09 - INFO - Git dir is at: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/esp_coex/lib
+2026-09-19 10:14:32 - 10 - 09 - INFO - ✓ Initialized modules repo: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/esp_coex/lib
+2026-09-19 10:14:33 - 10 - 09 - INFO - ✓ Submodule complete: components/esp_coex/lib
+2026-09-19 10:14:33 - 10 - 09 - INFO - IDF submodule correctly downloaded to:: components/esp_coex/lib
+2026-09-19 10:14:33 - 10 - 09 - INFO - Creating parent directories: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/bt/esp_ble_mesh/lib
+2026-09-19 10:14:33 - 10 - 09 - INFO - Creating modules dir: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/bt/esp_ble_mesh/lib/lib
+2026-09-19 10:14:33 - 10 - 09 - INFO - Contents of C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/bt/esp_ble_mesh/lib/lib before init: []
+2026-09-19 10:14:33 - 10 - 09 - INFO - Initializing new git repo at C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/bt/esp_ble_mesh/lib/lib
+2026-09-19 10:14:33 - 10 - 09 - INFO - Git dir is at: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/bt/esp_ble_mesh/lib/lib
+2026-09-19 10:14:33 - 10 - 09 - INFO - ✓ Initialized modules repo: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\.git\modules\components/bt/esp_ble_mesh/lib/lib
+2026-09-19 10:14:35 - 10 - 09 - INFO - ✓ Submodule complete: components/bt/esp_ble_mesh/lib/lib
+2026-09-19 10:14:35 - 10 - 09 - INFO - IDF submodule correctly downloaded to:: components/bt/esp_ble_mesh/lib/lib
+2026-09-19 10:14:35 - 10 - 09 - INFO - Submodules updated successfully
+2026-09-19 10:14:35 - 10 - 09 - INFO - wizard.tools.filtering.selected_tools: xtensa-esp-elf-gdb, xtensa-esp-elf, esp-clang, riscv32-esp-elf, esp32ulp-elf, cmake, openocd-esp32, ninja, idf-exe, ccache, dfu-util, esp-rom-elfs
+2026-09-19 10:14:35 - 10 - 09 - INFO - Filtered to 13 tools based on user selection for v5.4.2
+2026-09-19 10:14:35 - 10 - 09 - INFO - Downloading tools to: "C:\\Espressif\\dist"
+2026-09-19 10:14:35 - 10 - 09 - INFO - Tool cmake has multiple versions, using the recommended or the first one
+2026-09-19 10:14:35 - 10 - 09 - INFO - Tool 'cmake' is not installed. Downloading...
+2026-09-19 10:14:36 - 10 - 09 - INFO - cmake-3.30.2-windows-x86_64.zip successfully downloaded
+2026-09-19 10:14:36 - 10 - 09 - INFO - cmake-3.30.2-windows-x86_64.zip verified
+2026-09-19 10:14:36 - 10 - 09 - INFO - Decompressing C:\Espressif\dist\cmake-3.30.2-windows-x86_64.zip to C:\Espressif\tools\cmake\3.30.2
+2026-09-19 10:14:42 - 10 - 09 - INFO - Decompression completed successfully.
+2026-09-19 10:14:42 - 10 - 09 - INFO - Successfully extracted cmake-3.30.2-windows-x86_64.zip to C:\Espressif\tools\cmake\3.30.2
+2026-09-19 10:14:42 - 10 - 09 - INFO - Tool 'openocd-esp32' is not installed. Downloading...
+2026-09-19 10:14:43 - 10 - 09 - INFO - openocd-esp32-win64-0.12.0-esp32-20250422.zip successfully downloaded
+2026-09-19 10:14:43 - 10 - 09 - INFO - openocd-esp32-win64-0.12.0-esp32-20250422.zip verified
+2026-09-19 10:14:43 - 10 - 09 - INFO - Decompressing C:\Espressif\dist\openocd-esp32-win64-0.12.0-esp32-20250422.zip to C:\Espressif\tools\openocd-esp32\v0.12.0-esp32-20250422
+2026-09-19 10:14:43 - 10 - 09 - INFO - Decompression completed successfully.
+2026-09-19 10:14:43 - 10 - 09 - INFO - Successfully extracted openocd-esp32-win64-0.12.0-esp32-20250422.zip to C:\Espressif\tools\openocd-esp32\v0.12.0-esp32-20250422
+2026-09-19 10:14:43 - 10 - 09 - INFO - Tool 'esp-rom-elfs' is not installed. Downloading...
+2026-09-19 10:14:44 - 10 - 09 - INFO - esp-rom-elfs-20241011.tar.gz successfully downloaded
+2026-09-19 10:14:44 - 10 - 09 - INFO - esp-rom-elfs-20241011.tar.gz verified
+2026-09-19 10:14:44 - 10 - 09 - INFO - Decompression completed successfully.
+2026-09-19 10:14:44 - 10 - 09 - INFO - Successfully extracted esp-rom-elfs-20241011.tar.gz to C:\Espressif\tools\esp-rom-elfs\20241011
+2026-09-19 10:14:44 - 10 - 09 - INFO - Tool 'esp-clang' is not installed. Downloading...
+2026-09-19 10:15:01 - 10 - 09 - INFO - clang-esp-18.1.2_20240912-x86_64-w64-mingw32.tar.xz successfully downloaded
+2026-09-19 10:15:01 - 10 - 09 - INFO - clang-esp-18.1.2_20240912-x86_64-w64-mingw32.tar.xz verified
+2026-09-19 10:16:41 - 10 - 09 - INFO - Decompression completed successfully.
+2026-09-19 10:16:41 - 10 - 09 - INFO - Successfully extracted clang-esp-18.1.2_20240912-x86_64-w64-mingw32.tar.xz to C:\Espressif\tools\esp-clang\esp-18.1.2_20240912
+2026-09-19 10:16:41 - 10 - 09 - INFO - Tool 'dfu-util' is not installed. Downloading...
+2026-09-19 10:16:44 - 10 - 09 - INFO - dfu-util-0.11-win64.zip successfully downloaded
+2026-09-19 10:16:44 - 10 - 09 - INFO - dfu-util-0.11-win64.zip verified
+2026-09-19 10:16:44 - 10 - 09 - INFO - Decompressing C:\Espressif\dist\dfu-util-0.11-win64.zip to C:\Espressif\tools\dfu-util\0.11
+2026-09-19 10:16:44 - 10 - 09 - INFO - Decompression completed successfully.
+2026-09-19 10:16:44 - 10 - 09 - INFO - Successfully extracted dfu-util-0.11-win64.zip to C:\Espressif\tools\dfu-util\0.11
+2026-09-19 10:16:44 - 10 - 09 - INFO - Tool 'riscv32-esp-elf' is not installed. Downloading...
+2026-09-19 10:17:01 - 10 - 09 - INFO - riscv32-esp-elf-14.2.0_20241119-x86_64-w64-mingw32.zip successfully downloaded
+2026-09-19 10:17:02 - 10 - 09 - INFO - riscv32-esp-elf-14.2.0_20241119-x86_64-w64-mingw32.zip verified
+2026-09-19 10:17:02 - 10 - 09 - INFO - Decompressing C:\Espressif\dist\riscv32-esp-elf-14.2.0_20241119-x86_64-w64-mingw32.zip to C:\Espressif\tools\riscv32-esp-elf\esp-14.2.0_20241119
+2026-09-19 10:17:03 - 10 - 09 - WARN - ZipArchive decompression failed: IO error: O sistema não pode encontrar o caminho especificado. (os error 3). Falling back to PowerShell approach.
+2026-09-19 10:17:12 - 10 - 09 - INFO - Decompression completed successfully.
+2026-09-19 10:17:12 - 10 - 09 - INFO - Successfully extracted riscv32-esp-elf-14.2.0_20241119-x86_64-w64-mingw32.zip to C:\Espressif\tools\riscv32-esp-elf\esp-14.2.0_20241119
+2026-09-19 10:17:12 - 10 - 09 - INFO - Tool 'ccache' is not installed. Downloading...
+2026-09-19 10:17:12 - 10 - 09 - INFO - ccache-4.10.2-windows-x86_64.zip successfully downloaded
+2026-09-19 10:17:12 - 10 - 09 - INFO - ccache-4.10.2-windows-x86_64.zip verified
+2026-09-19 10:17:12 - 10 - 09 - INFO - Decompressing C:\Espressif\dist\ccache-4.10.2-windows-x86_64.zip to C:\Espressif\tools\ccache\4.10.2
+2026-09-19 10:17:12 - 10 - 09 - INFO - Decompression completed successfully.
+2026-09-19 10:17:12 - 10 - 09 - INFO - Successfully extracted ccache-4.10.2-windows-x86_64.zip to C:\Espressif\tools\ccache\4.10.2
+2026-09-19 10:17:12 - 10 - 09 - INFO - Tool 'esp32ulp-elf' is not installed. Downloading...
+2026-09-19 10:17:13 - 10 - 09 - INFO - esp32ulp-elf-2.38_20240113-win64.zip successfully downloaded
+2026-09-19 10:17:13 - 10 - 09 - INFO - esp32ulp-elf-2.38_20240113-win64.zip verified
+2026-09-19 10:17:13 - 10 - 09 - INFO - Decompressing C:\Espressif\dist\esp32ulp-elf-2.38_20240113-win64.zip to C:\Espressif\tools\esp32ulp-elf\2.38_20240113
+2026-09-19 10:17:13 - 10 - 09 - INFO - Decompression completed successfully.
+2026-09-19 10:17:13 - 10 - 09 - INFO - Successfully extracted esp32ulp-elf-2.38_20240113-win64.zip to C:\Espressif\tools\esp32ulp-elf\2.38_20240113
+2026-09-19 10:17:13 - 10 - 09 - INFO - Tool 'idf-exe' is not installed. Downloading...
+2026-09-19 10:17:14 - 10 - 09 - INFO - idf-exe-v1.0.3.zip successfully downloaded
+2026-09-19 10:17:14 - 10 - 09 - INFO - idf-exe-v1.0.3.zip verified
+2026-09-19 10:17:14 - 10 - 09 - INFO - Decompressing C:\Espressif\dist\idf-exe-v1.0.3.zip to C:\Espressif\tools\idf-exe\1.0.3
+2026-09-19 10:17:14 - 10 - 09 - INFO - Decompression completed successfully.
+2026-09-19 10:17:14 - 10 - 09 - INFO - Successfully extracted idf-exe-v1.0.3.zip to C:\Espressif\tools\idf-exe\1.0.3
+2026-09-19 10:17:14 - 10 - 09 - INFO - Tool 'xtensa-esp-elf-gdb' is not installed. Downloading...
+2026-09-19 10:17:15 - 10 - 09 - INFO - xtensa-esp-elf-gdb-14.2_20240403-x86_64-w64-mingw32.zip successfully downloaded
+2026-09-19 10:17:15 - 10 - 09 - INFO - xtensa-esp-elf-gdb-14.2_20240403-x86_64-w64-mingw32.zip verified
+2026-09-19 10:17:15 - 10 - 09 - INFO - Decompressing C:\Espressif\dist\xtensa-esp-elf-gdb-14.2_20240403-x86_64-w64-mingw32.zip to C:\Espressif\tools\xtensa-esp-elf-gdb\14.2_20240403
+2026-09-19 10:17:15 - 10 - 09 - INFO - Decompression completed successfully.
+2026-09-19 10:17:15 - 10 - 09 - INFO - Successfully extracted xtensa-esp-elf-gdb-14.2_20240403-x86_64-w64-mingw32.zip to C:\Espressif\tools\xtensa-esp-elf-gdb\14.2_20240403
+2026-09-19 10:17:15 - 10 - 09 - INFO - Tool 'xtensa-esp-elf' is not installed. Downloading...
+2026-09-19 10:17:27 - 10 - 09 - INFO - xtensa-esp-elf-14.2.0_20241119-x86_64-w64-mingw32.zip successfully downloaded
+2026-09-19 10:17:28 - 10 - 09 - INFO - xtensa-esp-elf-14.2.0_20241119-x86_64-w64-mingw32.zip verified
+2026-09-19 10:17:28 - 10 - 09 - INFO - Decompressing C:\Espressif\dist\xtensa-esp-elf-14.2.0_20241119-x86_64-w64-mingw32.zip to C:\Espressif\tools\xtensa-esp-elf\esp-14.2.0_20241119
+2026-09-19 10:17:29 - 10 - 09 - WARN - ZipArchive decompression failed: IO error: O sistema não pode encontrar o caminho especificado. (os error 3). Falling back to PowerShell approach.
+2026-09-19 10:17:37 - 10 - 09 - INFO - Decompression completed successfully.
+2026-09-19 10:17:37 - 10 - 09 - INFO - Successfully extracted xtensa-esp-elf-14.2.0_20241119-x86_64-w64-mingw32.zip to C:\Espressif\tools\xtensa-esp-elf\esp-14.2.0_20241119
+2026-09-19 10:17:37 - 10 - 09 - INFO - Tool 'ninja' is not installed. Downloading...
+2026-09-19 10:17:38 - 10 - 09 - INFO - ninja-win.zip successfully downloaded
+2026-09-19 10:17:38 - 10 - 09 - INFO - ninja-win.zip verified
+2026-09-19 10:17:38 - 10 - 09 - INFO - Decompressing C:\Espressif\dist\ninja-win.zip to C:\Espressif\tools\ninja\1.12.1
+2026-09-19 10:17:38 - 10 - 09 - INFO - Decompression completed successfully.
+2026-09-19 10:17:38 - 10 - 09 - INFO - Set executable permissions for ninja in C:\Espressif\tools\ninja\1.12.1
+2026-09-19 10:17:38 - 10 - 09 - INFO - Successfully extracted ninja-win.zip to C:\Espressif\tools\ninja\1.12.1
+2026-09-19 10:17:38 - 10 - 09 - INFO - wizard.tools.downloaded: C:\Users\RODRIG~1.DON\DOCUME~1\IAEMBA~1\ATIVID~1\.tools\espressif\v5.4.2\esp-idf\tools/tools.json
+2026-09-19 10:17:38 - 10 - 09 - INFO - Reusing the existing Python virtual environment; installing only the packages which are missing or no longer satisfy the constraints
+2026-09-19 10:17:38 - 10 - 09 - INFO - Skipping App Execution Alias: C:\Users\rodrigo.donde\AppData\Local\Microsoft\WindowsApps\python3.exe
+2026-09-19 10:17:38 - 10 - 09 - INFO - Found python on Windows PATH (alias-free): C:\Program Files\Python313\python.exe
+2026-09-19 10:17:38 - 10 - 09 - INFO - Downloading constraints file from https://dl.espressif.com/dl/esp-idf/espidf.constraints.v5.4.txt
+2026-09-19 10:17:39 - 10 - 09 - INFO - Downloaded constraints file to C:\Espressif\tools\espidf.constraints.v5.4.txt
+2026-09-19 10:17:39 - 10 - 09 - INFO - Downloaded constraints file to C:\Espressif\tools\espidf.constraints.v5.4.txt
+2026-09-19 10:17:39 - 10 - 09 - INFO - Downloaded constraints file: C:\Espressif\tools\espidf.constraints.v5.4.txt
+2026-09-19 10:17:39 - 10 - 09 - INFO - Creating Python virtual environment at: C:\Espressif\tools\python\v5.4.2\venv
+2026-09-19 10:19:34 - 10 - 09 - INFO - Python environment installed successfully
+2026-09-19 10:19:34 - 10 - 09 - INFO - Python environment installed
+2026-09-19 10:19:34 - 10 - 09 - INFO - ELF ROM directory found: C:\Espressif\tools\esp-rom-elfs\20241011
+2026-09-19 10:19:35 - 10 - 09 - INFO - Desktop shortcut created successfully
+2026-09-19 10:19:35 - 10 - 09 - INFO - PowerShell deactivation profile created successfully
+2026-09-19 10:22:44 - 10 - 09 - INFO - Components registry synchronized successfully
+2026-09-19 10:22:48 - 10 - 09 - INFO - Required components successfully downloaded
+2026-09-19 10:22:48 - 10 - 09 - INFO - Wizard result: Ok
+2026-09-19 10:22:48 - 10 - 09 - INFO - Successfully installed IDF
+2026-09-19 10:22:48 - 10 - 09 - INFO - Now you can start using IDF tools

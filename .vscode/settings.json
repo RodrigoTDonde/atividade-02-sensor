@@ -1,0 +1,5 @@
+{
+  "files.exclude": { ".tools": true },
+  "search.exclude": { ".tools/**": true, "build/**": true },
+  "files.watcherExclude": { "**/.tools/**": true, "**/build/**": true }
+}

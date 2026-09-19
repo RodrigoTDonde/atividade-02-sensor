@@ -1,0 +1,9 @@
+.tools/
+build/
+managed_components/
+sdkconfig
+sdkconfig.old
+*.log
+!evidencias/*.log
+evidencias/referencia/
+__pycache__/

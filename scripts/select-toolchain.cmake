@@ -1,0 +1,1 @@
+set(CMAKE_TOOLCHAIN_FILE "${CMAKE_CURRENT_LIST_DIR}/toolchain-esp32s3.cmake")
