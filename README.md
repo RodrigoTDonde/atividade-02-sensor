@@ -6,7 +6,9 @@ desperta o sensor e imprime os seis eixos a cada 500 ms com `ESP_LOGI`.
 `vTaskDelay()` libera o processador entre as amostras.
 
 Compilação local concluída sem erros em 19/09/2026; registro em
-`evidencias/build.log`. Repositório de entrega:
+`evidencias/build.log`. Leituras iniciais e resposta à alteração dos controles
+validadas no Wokwi, com capturas recebidas em 20/09/2026.
+Repositório de entrega:
 https://github.com/rodrigodondesenai/atividade-02-sensor
 
 ## Circuito
@@ -73,7 +75,23 @@ visível, execute `scripts/capture-serial.py` usando o Python do ESP-IDF
 
 ## Roteiro de validação e evidências
 
-Valores abaixo são **resultados esperados**, não medições já realizadas.
+Resultados observados:
+
+| Estado | Aceleração (g), X / Y / Z | Giroscópio (graus/s), X / Y / Z |
+| --- | --- | --- |
+| Inicial | 0 / 0 / 1 | 0 / 0 / 0 |
+| Controles alterados | 0,5 / 0 / 1 | 0 / 0 / 90 |
+
+As leituras iniciais também estão em [serial.log](evidencias/serial.log).
+A alteração está documentada na captura original abaixo:
+
+![MPU6050: controles e leituras após alteração](evidencias/06-leitura-alterada.png)
+
+[Circuito e leituras iniciais](evidencias/04-circuito-leitura-inicial.png) ·
+[Controles iniciais](evidencias/05-controles-iniciais.png)
+
+O roteiro abaixo inclui verificações complementares ainda não executadas;
+seus resultados esperados não devem ser confundidos com as medições acima.
 
 | Etapa | Ação | Resultado esperado |
 | --- | --- | --- |

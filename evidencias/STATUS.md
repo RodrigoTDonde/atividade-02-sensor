@@ -1,4 +1,4 @@
-# Registro de execução — 19/09/2026
+# Registro de execução — atualizado em 20/09/2026
 
 ## Confirmado
 
@@ -17,6 +17,16 @@
 - Log real da compilação: `evidencias/build.log`.
 - Diagrama JSON válido; biblioteca original comparada com a cópia local:
   única alteração funcional em `CMakeLists.txt`.
+- Execução no Wokwi confirmada: captura serial real em `serial.log`,
+  com ACC (0, 0, 1) g e GYRO (0, 0, 0) graus/s, em intervalos de 500 ms.
+- Capturas fornecidas pelo usuário em 20/09/2026, copiadas sem edição:
+  - `04-circuito-leitura-inicial.png`: circuito, licença e leituras iniciais.
+  - `05-controles-iniciais.png`: controles em (0, 0, 1) g e giro nulo.
+  - `06-leitura-alterada.png`: controle X = 0,5 g e rotação Z = 90 graus/s;
+    serial confirma ACC X = +0,500 g e GYRO Z = +90,000 graus/s.
+- O teste de alteração dos valores foi aprovado pelas capturas. Elas não
+  mostram a linha de WHO_AM_I; no firmware compilado, o laço de leitura só
+  é alcançado após verificar a identidade e concluir a inicialização.
 
 ## Instalação e correções
 
@@ -42,9 +52,11 @@ da configuração CMake. Os horários dos arquivos extraídos foram normalizados
 
 ## Ainda pendente
 
-- Executar no Wokwi e observar `WHO_AM_I=0x68` e as leituras.
-- Alterar controles do sensor e confirmar resposta dos valores.
-- Capturas de tela das etapas e screenshot final no VS Code.
+- Capturar a mensagem explícita `WHO_AM_I=0x68 OK` na inicialização.
+- Guardar uma captura final da janela completa do VS Code, mostrando
+  o projeto, circuito e serial; as três capturas atuais mostram o painel Wokwi.
+- Enviar o link do repositório e o screenshot final no ambiente da disciplina.
 
-Os valores de exemplo do README são expectativas de teste, não evidências
-de execução no simulador.
+Capturas adicionais das extensões e da compilação complementam os logs já
+guardados. Os testes de retorno, eixo Y negativo e desconexão I2C do roteiro
+não foram documentados como executados; são verificações complementares.
