@@ -6,6 +6,8 @@
 
 **Screenshot final:** [evidencias/07-final-vscode.png](evidencias/07-final-vscode.png)
 
+**Evidência de inicialização:** [evidencias/08-inicializacao.png](evidencias/08-inicializacao.png)
+
 ## Texto para o campo de descrição, se houver
 
 Projeto em C com ESP-IDF 5.4.2, ESP32-S3 DevKitC-1 e MPU6050 no Wokwi.
@@ -22,7 +24,7 @@ alterações dos controles: aceleração X de 0 para 0,5 g e rotação Z de
 - [x] Compilação validada e log preservado.
 - [x] Leituras iniciais e alteradas documentadas.
 - [x] Screenshot final salvo.
-- [ ] Captura explícita das mensagens de inicialização.
+- [x] Captura explícita das mensagens de inicialização.
 - [ ] Link e screenshot enviados na plataforma da disciplina.
 - [ ] Confirmação de entrega conferida na plataforma.
 

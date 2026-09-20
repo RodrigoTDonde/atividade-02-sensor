@@ -28,9 +28,12 @@
     mostrando o painel Wokwi no VS Code, circuito, licença ativa e leituras
     alteradas, com os controles do sensor fechados. É um recorte dos painéis,
     sem o Explorer do projeto; não é uma captura da janela inteira.
-- O teste de alteração dos valores foi aprovado pelas capturas. Elas não
-  mostram a linha de WHO_AM_I; no firmware compilado, o laço de leitura só
-  é alcançado após verificar a identidade e concluir a inicialização.
+  - `08-inicializacao.png`: captura fornecida como `simulador5.png`, com
+    `WHO_AM_I=0x68 OK`, `MPU6050 inicializado`, SDA=8, SCL=9, endereço 0x68,
+    escalas de +/-2 g e +/-250 graus/s e leituras alteradas.
+- Inicialização e resposta à alteração dos valores confirmadas pelas capturas.
+  O aviso do SDK sobre o driver I2C legado está visível; a execução prossegue
+  com inicialização e leituras corretas usando a biblioteca prevista na atividade.
 
 ## Instalação e correções
 
@@ -56,7 +59,6 @@ da configuração CMake. Os horários dos arquivos extraídos foram normalizados
 
 ## Ainda pendente
 
-- Capturar a mensagem explícita `WHO_AM_I=0x68 OK` na inicialização.
 - Enviar o link do repositório e o screenshot final no ambiente da disciplina.
 
 Capturas adicionais das extensões e da compilação complementam os logs já
