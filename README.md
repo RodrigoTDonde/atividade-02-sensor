@@ -11,6 +11,11 @@ validadas no Wokwi, com capturas recebidas em 20/09/2026.
 Repositório de entrega:
 https://github.com/rodrigodondesenai/atividade-02-sensor
 
+Screenshot para anexar na entrega:
+[07-final-vscode.png](evidencias/07-final-vscode.png).
+O registro explícito da inicialização e o envio na plataforma ainda estão
+pendentes, conforme [STATUS.md](evidencias/STATUS.md).
+
 ## Circuito
 
 | ESP32-S3 | MPU6050 | Função |
@@ -113,7 +118,8 @@ Guarde em `evidencias/`:
 - `04-circuito.png`: placa, sensor e ligações.
 - `05-leitura-inicial.png`: identidade e leituras iniciais.
 - `06-leitura-alterada.png`: controles alterados e resposta serial.
-- `07-final-vscode.png`: VS Code com circuito, código e leituras visíveis.
+- `07-final-vscode.png`: painel Wokwi no VS Code com circuito e leituras visíveis (já recebido).
+- `08-inicializacao.png`: mensagens `WHO_AM_I=0x68 OK` e `MPU6050 inicializado` (pendente).
 - `build.log`: registro real da compilação.
 
 No Windows, use **Win+Shift+S** e salve a captura na pasta `evidencias`.

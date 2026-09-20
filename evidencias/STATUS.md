@@ -24,6 +24,10 @@
   - `05-controles-iniciais.png`: controles em (0, 0, 1) g e giro nulo.
   - `06-leitura-alterada.png`: controle X = 0,5 g e rotação Z = 90 graus/s;
     serial confirma ACC X = +0,500 g e GYRO Z = +90,000 graus/s.
+  - `07-final-vscode.png`: captura final fornecida como `simulador4.png`,
+    mostrando o painel Wokwi no VS Code, circuito, licença ativa e leituras
+    alteradas, com os controles do sensor fechados. É um recorte dos painéis,
+    sem o Explorer do projeto; não é uma captura da janela inteira.
 - O teste de alteração dos valores foi aprovado pelas capturas. Elas não
   mostram a linha de WHO_AM_I; no firmware compilado, o laço de leitura só
   é alcançado após verificar a identidade e concluir a inicialização.
@@ -53,8 +57,6 @@ da configuração CMake. Os horários dos arquivos extraídos foram normalizados
 ## Ainda pendente
 
 - Capturar a mensagem explícita `WHO_AM_I=0x68 OK` na inicialização.
-- Guardar uma captura final da janela completa do VS Code, mostrando
-  o projeto, circuito e serial; as três capturas atuais mostram o painel Wokwi.
 - Enviar o link do repositório e o screenshot final no ambiente da disciplina.
 
 Capturas adicionais das extensões e da compilação complementam os logs já
