@@ -10,13 +10,15 @@
 
 ## Texto para o campo de descrição, se houver
 
-Projeto em C com ESP-IDF 5.4.2, ESP32-S3 DevKitC-1 e MPU6050 no Wokwi.
-Comunicação I2C com SDA no GPIO 8 e SCL no GPIO 9, usando a biblioteca
-espressif/mpu6050. O firmware verifica WHO_AM_I, inicializa o sensor e
-imprime aceleração em g e giroscópio em graus/s a cada 500 ms.
-Compilação concluída sem erros. A simulação confirmou a resposta às
-alterações dos controles: aceleração X de 0 para 0,5 g e rotação Z de
-0 para 90 graus/s. Código, circuito, logs e capturas estão no repositório.
+Nesta atividade, usei um ESP32-S3 DevKitC-1 para ler o sensor MPU6050 no
+Wokwi. O programa foi escrito em C com ESP-IDF 5.4.2, usando a biblioteca
+espressif/mpu6050. As ligações de dados são SDA no GPIO 8 e SCL no GPIO 9.
+
+O programa identifica o sensor, faz sua configuração inicial e mostra a
+aceleração em g e a rotação em graus por segundo a cada 500 ms. A compilação
+terminou sem erros. No simulador, alterei a aceleração X para 0,5 g e a
+rotação Z para 90 graus/s, e o terminal mostrou esses mesmos valores.
+O repositório contém o código, o circuito, os registros e as capturas dos testes.
 
 ## Conferência antes de concluir o envio
 

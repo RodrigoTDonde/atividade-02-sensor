@@ -35,7 +35,24 @@
   O aviso do SDK sobre o driver I2C legado está visível; a execução prossegue
   com inicialização e leituras corretas usando a biblioteca prevista na atividade.
 
-## Instalação e correções
+## Checagem final
+
+A revisão confirmou os quatro critérios informados para a atividade:
+ambiente configurado, circuito correto, compilação sem erros e leituras
+corretas. O README apresenta os critérios com seus respectivos pesos.
+
+O comando de compilação foi executado novamente e terminou com código 0
+e a mensagem `Project build complete`. O resultado está em
+`revisao-final-build.log`; o log da primeira compilação foi preservado.
+Essa checagem foi incremental: aproveitou os arquivos já compilados.
+O resumo das verificações está em [revisao-final.txt](revisao-final.txt).
+
+Foram revisados o código C, as ligações do diagrama, as configurações de
+compilação e simulação, os scripts de apoio e as capturas fornecidas.
+As leituras no simulador são comprovadas pelas capturas anteriores;
+a revisão final não representa uma nova execução no Wokwi.
+
+## Ajustes feitos durante a instalação
 
 O SDK foi instalado em `.tools/espressif/v5.4.2/esp-idf`. Embora o caminho
 base tivesse sido informado dentro do projeto, o EIM usou seus padrões
@@ -44,18 +61,19 @@ downloads, e informou criação de atalho no Desktop. Essa ocorrência foi
 comunicada ao usuário; não se declara que toda a instalação ficou no projeto.
 Não foram removidos arquivos externos.
 
-A extração inicial do compilador deixou `libexec` como arquivo vazio,
-provocando `cannot execute cc1`. O pacote já baixado foi validado pelo SHA256
+A instalação inicial deixou incompleta uma pasta do compilador, chamada
+`libexec`. Por isso, apareceu o erro `cannot execute cc1`. A integridade do
+pacote baixado foi conferida pelo código SHA256
 `62ae704777d73c30689efff6e81178632a1ca44d1a2d60f4621eb997e040e028`
-e extraído corretamente para `.tools/toolchain`.
+e ele foi extraído corretamente para `.tools/toolchain`.
 
-O caminho com espaços fez o CMake abreviar nomes de executáveis e o GCC
-reportar conflito de `XTENSA_GNU_CONFIG`. Os scripts CMake em `scripts/`
-selecionam o compilador por um caminho curto de diretório e preservam seu
-nome completo. Não foi necessário mover o projeto.
+O nome da pasta do projeto contém espaços. Isso fez as ferramentas
+abreviarem o nome do compilador e causou outro erro. Os arquivos em
+`scripts/` ajustam esse caminho para permitir a compilação. O projeto
+permaneceu na mesma pasta.
 
-Datas futuras herdadas da extração do ZIP da biblioteca causaram repetição
-da configuração CMake. Os horários dos arquivos extraídos foram normalizados.
+Alguns arquivos extraídos tinham datas futuras, o que fazia a configuração
+se repetir. As datas desses arquivos foram corrigidas.
 
 ## Ainda pendente
 

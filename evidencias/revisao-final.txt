@@ -1,0 +1,10 @@
+OK: arquivos JSON validos
+OK: alimentacao, GND, SDA=8, SCL=9 e AD0 conferidos
+OK: Wokwi aponta para firmware, ELF, bootloader e particoes existentes
+OK: binarios e ELF mantem os tamanhos e SHA256 registrados na primeira compilacao
+OK: links locais da documentacao apontam para arquivos existentes
+OK: sintaxe do script de captura serial
+OK: compilacao incremental final concluida
+Revisao de codigo: identidade, configuracao, unidades, ESP_LOGI, vTaskDelay e retornos de erro conferidos.
+Simulacao: revisadas as capturas existentes; sem nova execucao nesta revisao.
+Pendente: envio e confirmacao na plataforma da disciplina.

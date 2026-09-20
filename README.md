@@ -1,137 +1,134 @@
 # Atividade Avaliativa Prática 2/6 — Leitura de sensor
 
-ESP32-S3 DevKitC-1 + MPU6050 no Wokwi, usando C e ESP-IDF 5.4.2.
-O programa confere `WHO_AM_I == 0x68`, configura ±2 g e ±250 graus/s,
-desperta o sensor e imprime os seis eixos a cada 500 ms com `ESP_LOGI`.
-`vTaskDelay()` libera o processador entre as amostras.
+Este projeto usa um **ESP32-S3 DevKitC-1** para ler um **MPU6050** no
+simulador Wokwi. O programa foi escrito em **C**, com **ESP-IDF 5.4.2**,
+e é executado pelo VS Code.
 
-Compilação local concluída sem erros em 19/09/2026; registro em
-`evidencias/build.log`. Leituras iniciais e resposta à alteração dos controles
-validadas no Wokwi, com capturas recebidas em 20/09/2026.
-Repositório de entrega:
-https://github.com/rodrigodondesenai/atividade-02-sensor
+O MPU6050 mede aceleração e rotação nos eixos X, Y e Z. O programa verifica
+se o sensor está respondendo, faz a configuração inicial e mostra uma nova
+leitura no terminal a cada **500 ms**.
 
-Screenshot para anexar na entrega:
-[07-final-vscode.png](evidencias/07-final-vscode.png).
-A inicialização está documentada em
-[08-inicializacao.png](evidencias/08-inicializacao.png), com `WHO_AM_I=0x68 OK`
-e `MPU6050 inicializado`. Falta o envio na plataforma, conforme
-[STATUS.md](evidencias/STATUS.md).
+**A implementação e as evidências estão prontas para entrega.** O envio
+na plataforma da disciplina ainda não foi confirmado.
 
-## Circuito
+## Conferência dos requisitos
 
-| ESP32-S3 | MPU6050 | Função |
+Esta tabela segue os critérios informados para a atividade. Os percentuais
+são os pesos da avaliação; a nota será definida pelo professor.
+
+| Critério | Peso | O que foi conferido |
 | --- | --- | --- |
-| 3V3 | VCC | Alimentação |
-| GND | GND | Referência comum |
-| GPIO 8 | SDA | Dados I2C |
-| GPIO 9 | SCL | Clock I2C, 100 kHz |
-| GND | AD0 | Endereço 0x68 |
+| Configuração ESP-IDF e conta Wokwi | 50% | ESP-IDF instalado e usado na compilação; Wokwi com licença ativa e simulação funcionando |
+| Circuito correto | 20% | ESP32-S3 e MPU6050, alimentação em 3,3 V, GND comum, SDA no GPIO 8 e SCL no GPIO 9 |
+| Compilação sem erros | 20% | Programa, bootloader e tabela de partições gerados; log de compilação salvo |
+| Inicialização e leituras corretas | 10% | `WHO_AM_I=0x68 OK`, sensor inicializado e leituras acompanhando as mudanças dos controles |
 
-INT, XDA e XCL não são usados. O firmware habilita pull-ups internos.
-O circuito está em `diagram.json`.
+O código usa `app_main()`, `ESP_LOGI()` e `vTaskDelay()`, além da biblioteca
+`espressif/mpu6050`. As falhas de comunicação são verificadas antes de
+mostrar os valores.
 
-## Biblioteca e compatibilidade
+## Ligações do circuito
 
-A biblioteca oficial `espressif/mpu6050` 1.2.1 está incluída em
-`components/mpu6050`, com licença e procedência em `ORIGEM.md`.
-A dependência `driver` foi acrescentada no CMake para ESP-IDF >= 5.3,
-conforme a página 76 da Aula 2. A correção acompanha o Git.
-As funções da biblioteca retornam aceleração em **g** e giro em **graus/s**;
-1 g corresponde a 9,80665 m/s².
+| ESP32-S3 | MPU6050 | Para que serve |
+| --- | --- | --- |
+| 3V3 | VCC | Alimentar o sensor |
+| GND | GND | Manter a mesma referência elétrica |
+| GPIO 8 | SDA | Transmitir os dados |
+| GPIO 9 | SCL | Sincronizar a comunicação |
+| GND | AD0 | Selecionar o endereço 0x68 |
 
-## Compilar neste computador
+O circuito está em [diagram.json](diagram.json). A comunicação I2C funciona
+a 100 kHz. Os pinos INT, XDA e XCL não são usados nesta atividade.
 
-1. Abra esta pasta no VS Code.
-2. Pressione **Ctrl+Shift+B** e execute **Atividade 02: compilar ESP-IDF**.
-3. Espere a mensagem `Project build complete`.
+## Como executar neste computador
 
-Alternativa pelo terminal PowerShell:
+1. Abra a pasta do projeto no VS Code.
+2. Pressione **Ctrl+Shift+B** e selecione **Atividade 02: compilar ESP-IDF**.
+3. Espere **Project build complete**. Essa mensagem indica que a compilação terminou.
+4. Pressione **F1** e selecione **Wokwi: Start Simulator**.
+5. No terminal do Wokwi, confira **WHO_AM_I=0x68 OK** e **MPU6050 inicializado**.
+6. Clique no MPU6050 e altere os controles para observar a mudança das leituras.
+
+A licença Wokwi já foi ativada neste computador. Em uma nova instalação,
+use **F1 → Wokwi: Request a New License**, entre na conta pelo navegador
+e confirme a volta ao VS Code.
+
+Também é possível compilar pelo terminal PowerShell:
 
 ```powershell
 powershell -NoProfile -ExecutionPolicy Bypass -File scripts/build.ps1
 ```
 
-O script lê o registro local `.tools/eim_idf.json`, configura a sessão e
-salva a saída em `evidencias/build.log`. SDK, ferramentas e caches não entram
-no Git. Há uma cópia corrigida do compilador em `.tools/toolchain`, pois a
-extração inicial feita pelo EIM 0.19.0 deixou arquivos vazios no lugar de
-diretórios. O ZIP foi conferido pelo SHA256 publicado em `tools/tools.json`.
+Esse script usa a instalação local e guarda o resultado em `evidencias/build.log`.
+As ferramentas de desenvolvimento não são incluídas no repositório.
 
-Em outro computador com ESP-IDF 5.4.2 configurado, use seu terminal ESP-IDF:
+Em outro computador, primeiro configure o ESP-IDF 5.4.2 e as extensões
+ESP-IDF e Wokwi. No terminal do ESP-IDF, dentro da pasta do projeto, execute:
 
 ```text
 idf.py set-target esp32s3
 idf.py build
 ```
 
-## Licença Wokwi e simulação
+## Como entender as leituras
 
-1. Pressione **F1 → Wokwi: Request a New License**.
-2. Autorize abrir o navegador, entre na conta e clique **GET YOUR LICENSE**.
-3. Autorize voltar ao VS Code e confirme `License activated`.
-4. Após compilar, pressione **F1 → Wokwi: Start Simulator**.
-5. Confira `WHO_AM_I=0x68 OK` e `MPU6050 inicializado` no monitor serial.
-6. Clique no MPU6050 e altere seus controles de aceleração e rotação.
+- **ACC [g]**: aceleração. Uma unidade g equivale a aproximadamente 9,81 m/s².
+- **GYRO [graus/s]**: velocidade de rotação, em graus por segundo.
+- **WHO_AM_I**: registro que identifica o sensor. O valor esperado é `0x68`.
 
-O `wokwi.toml` carrega `build/flasher_args.json` (aplicação, bootloader e
-tabela de partições) e `build/atividade_02_sensor.elf`.
-Também permite capturar a serial pela porta local 4000. Com o simulador
-visível, execute `scripts/capture-serial.py` usando o Python do ESP-IDF
-(com `pyserial` instalado) para acrescentar 30 segundos a `evidencias/serial.log`.
+Os seguintes resultados foram observados no Wokwi:
 
-## Roteiro de validação e evidências
-
-Resultados observados:
-
-| Estado | Aceleração (g), X / Y / Z | Giroscópio (graus/s), X / Y / Z |
+| Situação | Aceleração X / Y / Z (g) | Rotação X / Y / Z (graus/s) |
 | --- | --- | --- |
-| Inicial | 0 / 0 / 1 | 0 / 0 / 0 |
-| Controles alterados | 0,5 / 0 / 1 | 0 / 0 / 90 |
+| Controles iniciais | 0 / 0 / 1 | 0 / 0 / 0 |
+| X ajustado para 0,5 g e rotação Z para 90 graus/s | 0,5 / 0 / 1 | 0 / 0 / 90 |
 
-As leituras iniciais também estão em [serial.log](evidencias/serial.log).
-A alteração está documentada na captura original abaixo:
+![Controles alterados e resposta no terminal](evidencias/06-leitura-alterada.png)
 
-![MPU6050: controles e leituras após alteração](evidencias/06-leitura-alterada.png)
+Se ocorrer uma falha de leitura, o programa descarta aquela amostra e tenta
+novamente após 500 ms. Se o sensor não puder ser inicializado, mostra o erro
+e interrompe a leitura. O teste de desconectar o sensor não foi realizado;
+o tratamento de erros foi conferido no código.
 
-[Circuito e leituras iniciais](evidencias/04-circuito-leitura-inicial.png) ·
-[Controles iniciais](evidencias/05-controles-iniciais.png)
+## Evidências salvas
 
-O roteiro abaixo inclui verificações complementares ainda não executadas;
-seus resultados esperados não devem ser confundidos com as medições acima.
+| Arquivo | O que mostra |
+| --- | --- |
+| [Instalação](evidencias/instalacao-eim.log) | Registro da instalação do ESP-IDF |
+| [Compilação inicial](evidencias/build.log) | Compilação concluída sem erros |
+| [Checagem final da compilação](evidencias/revisao-final-build.log) | Nova execução do comando de compilação, concluída sem erros |
+| [Circuito e leituras iniciais](evidencias/04-circuito-leitura-inicial.png) | Montagem, licença Wokwi ativa e sensor em execução |
+| [Controles iniciais](evidencias/05-controles-iniciais.png) | Valores usados no início do teste |
+| [Leituras alteradas](evidencias/06-leitura-alterada.png) | Correspondência entre controles e valores lidos |
+| [Screenshot final](evidencias/07-final-vscode.png) | Circuito e terminal no VS Code |
+| [Inicialização](evidencias/08-inicializacao.png) | Identificação e inicialização do MPU6050 |
+| [Saída serial](evidencias/serial.log) | Leituras iniciais gravadas diretamente do simulador |
 
-| Etapa | Ação | Resultado esperado |
-| --- | --- | --- |
-| Inicial | Iniciar com os atributos do diagrama | ACC ≈ (0, 0, 1) g; GYRO ≈ (0, 0, 0) graus/s |
-| Aceleração | Ajustar X para 0,5 g e Y para -0,5 g | X ≈ +0,500; Y ≈ -0,500 |
-| Giroscópio | Ajustar Z para 90 graus/s | GYRO Z ≈ +90,000 |
-| Retorno | Restaurar os controles | Leituras voltam aos valores iniciais |
-| Erro I2C | Parar, desconectar SDA e reiniciar | Log de erro; não confirmar inicialização |
+O [registro de revisão](evidencias/STATUS.md) reúne as versões usadas,
+os ajustes de instalação e o resultado da checagem final.
 
-Após o teste de erro, restaure SDA no GPIO 8 e reinicie. Em falhas de leitura,
-o programa descarta a amostra e tenta novamente após 500 ms. Falhas na
-inicialização encerram `app_main` com diagnóstico, sem imprimir dados falsos.
+## Ajuste da biblioteca
 
-Guarde em `evidencias/`:
+Foi usada a biblioteca oficial **espressif/mpu6050 1.2.1**. Conforme a
+página 76 da Aula 2, acrescentamos `driver` às dependências no arquivo
+CMake da biblioteca para usar o ESP-IDF 5.4.2. Essa correção está salva no
+projeto e acompanha qualquer cópia do repositório.
 
-- `01-extensoes.png`: extensões ESP-IDF e Wokwi.
-- `02-sdk.png`: versão do SDK/compilação no VS Code.
-- `03-wokwi-ativo.png`: confirmação da licença, sem expor a chave.
-- `04-circuito.png`: placa, sensor e ligações.
-- `05-leitura-inicial.png`: identidade e leituras iniciais.
-- `06-leitura-alterada.png`: controles alterados e resposta serial.
-- `07-final-vscode.png`: painel Wokwi no VS Code com circuito e leituras visíveis (já recebido).
-- `08-inicializacao.png`: mensagens `WHO_AM_I=0x68 OK` e `MPU6050 inicializado` (já recebido).
-- `build.log`: registro real da compilação.
+O aviso de driver I2C antigo mostrado no terminal é esperado com essa
+biblioteca. As capturas confirmam que o sensor inicializa e lê corretamente.
+Consulte [a origem da biblioteca](components/mpu6050/ORIGEM.md) para os detalhes.
 
-No Windows, use **Win+Shift+S** e salve a captura na pasta `evidencias`.
-A entrega exige o link do repositório Git e o screenshot final no VS Code.
-Consulte `evidencias/STATUS.md` para separar verificações concluídas de pendências.
+## Entrega
 
-## Referências
+Envie o [link do repositório](https://github.com/rodrigodondesenai/atividade-02-sensor)
+e o [screenshot final](evidencias/07-final-vscode.png) na plataforma da disciplina.
+Se houver espaço para outros anexos, inclua também a captura da inicialização.
+O arquivo [ENTREGA.md](ENTREGA.md) contém um texto pronto para acompanhar o envio.
+
+## Material de referência
 
 - Aula 2 fornecida pelo curso: páginas 19–42 e 68–82.
-- https://docs.wokwi.com/vscode/getting-started
-- https://docs.wokwi.com/vscode/project-config
-- https://docs.wokwi.com/parts/wokwi-mpu6050
-- https://components.espressif.com/components/espressif/mpu6050/versions/1.2.1
+- [Wokwi no VS Code](https://docs.wokwi.com/vscode/getting-started)
+- [Configuração do projeto Wokwi](https://docs.wokwi.com/vscode/project-config)
+- [Sensor MPU6050 no Wokwi](https://docs.wokwi.com/parts/wokwi-mpu6050)
+- [Biblioteca espressif/mpu6050](https://components.espressif.com/components/espressif/mpu6050/versions/1.2.1)
