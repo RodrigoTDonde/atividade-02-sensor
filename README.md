@@ -1,5 +1,14 @@
 # Atividade Avaliativa Prática 2/6 — Leitura de sensor
 
+## Portfólio de IA
+
+Trabalho acadêmico da pós-graduação, preservado no portfólio de [Rodrigo Teles Dondé](https://github.com/RodrigoTDonde).
+
+**Competências:** C, ESP-IDF, I2C, MPU6050, ESP32-S3 e simulação no Wokwi.
+
+**Origem acadêmica:** [rodrigodondesenai/atividade-02-sensor](https://github.com/rodrigodondesenai/atividade-02-sensor). [Registro da migração e créditos](PORTFOLIO.md).
+
+
 Este projeto usa um **ESP32-S3 DevKitC-1** para ler um **MPU6050** no
 simulador Wokwi. O programa foi escrito em **C**, com **ESP-IDF 5.4.2**,
 e é executado pelo VS Code.
@@ -120,7 +129,7 @@ Consulte [a origem da biblioteca](components/mpu6050/ORIGEM.md) para os detalhes
 
 ## Entrega
 
-Envie o [link do repositório](https://github.com/rodrigodondesenai/atividade-02-sensor)
+Envie o [link do repositório](https://github.com/RodrigoTDonde/atividade-02-sensor)
 e o [screenshot final](evidencias/07-final-vscode.png) na plataforma da disciplina.
 Se houver espaço para outros anexos, inclua também a captura da inicialização.
 O arquivo [ENTREGA.md](ENTREGA.md) contém um texto pronto para acompanhar o envio.
